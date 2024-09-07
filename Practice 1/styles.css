@@ -1,0 +1,44 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  background: #333;
+  color: white;
+  padding: 20px;
+  text-align: center;
+}
+
+main {
+  padding: 20px;
+}
+
+#loading {
+  font-size: 20px;
+  text-align: center;
+}
+
+#movie-list {
+  display: grid; /* Використання CSS Grid для сітки */
+  grid-template-columns: repeat(
+    auto-fill,
+    minmax(150px, 1fr)
+  ); /* Кількість колонок автоматично, з мінімальною шириною 150px */
+  gap: 10px; /* Відстань між елементами */
+}
+
+.movie-item {
+  text-align: center;
+  background-color: white; /* Фон для елементів */
+  border-radius: 8px; /* Заокруглені кути */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* Тінь для елементів */
+  overflow: hidden; /* Приховує все, що виходить за межі */
+}
+
+.movie-item img {
+  width: 100%; /* Картинка займає всю ширину батьківського елемента */
+  height: auto; /* Автоматична висота, пропорції зберігаються */
+}
